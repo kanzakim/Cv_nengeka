@@ -13,12 +13,6 @@ body {
   padding: 40px;
   border-radius: 16px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 0.8s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
 }
 
 .cv-header {
@@ -71,11 +65,6 @@ body {
   border-left: 4px solid #3498db;
   border-radius: 8px;
   margin-bottom: 20px;
-  transition: background 0.3s ease;
-}
-
-.cv-card:hover {
-  background: #eef6fb;
 }
 
 .cv-card h3 {
@@ -141,4 +130,50 @@ a:hover {
   font-weight: 600;
   border-radius: 20px 0 0 20px;
   transition: width 0.6s ease;
+}
+
+/* Education Timeline */
+.education-timeline {
+  border-left: 4px solid #3498db;
+  padding-left: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.edu-item {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+
+.edu-item::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: #3498db;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #3498db;
+}
+
+.edu-year {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+
+.edu-content h3 {
+  margin: 0;
+  font-size: 17px;
+  color: #34495e;
+}
+
+.edu-content p {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: #666;
 }
